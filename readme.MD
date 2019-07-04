@@ -41,4 +41,4 @@ ENV LANG en_US.UTF-8
 docker run --rm oraclejdk-linux-64:8u181 java -version
 
 如果镜像制作成功，打印如下信息：
-https://github.com/hepyu/oraclejdk-docker-image/blob/master/images/oraclejdk-1.png
+![image](https://github.com/hepyu/oraclejdk-docker-image/blob/master/images/oraclejdk-1.png)
