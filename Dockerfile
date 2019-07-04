@@ -31,6 +31,6 @@ COPY mysql /app/3rd/mysql/default/bin/
 COPY redis-cli /app/3rd/redis/default/bin/
 
 #配置环境变量
-ENV JAVA_HOME /app/3rd/jdk/bin
+ENV JAVA_HOME /app/3rd/jdk/default
 ENV PATH $PATH:/$JAVA_HOME/bin
 ENV LANG en_US.UTF-8

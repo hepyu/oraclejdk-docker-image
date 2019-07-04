@@ -1,0 +1,9 @@
+
+# image验证命令
+docker run --rm oraclejdk-linux-64:8u181 java -version
+
+# 会打印出如下：
+
+java version "1.8.0_181"
+Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)
