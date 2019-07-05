@@ -9,7 +9,7 @@
 2.sh docker.build.sh
 进行镜像制作。
 
-本工程使用的是oracle-jdk8u181版本，可以根据自己需要更换版本。
+本工程使用的是oracle-jdk8u181版本，可以根据自己需要更换版本，本工程包含JDK（太大无法上传到github）。
 
 # (2).Dockerfile重点配置详解
 
