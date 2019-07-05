@@ -7,7 +7,7 @@
 用于修改下载的官方jdk压缩包为合适的文件路径，具体可以查看shell脚本。
 
 2.sh docker.build.sh
-进行镜像制作。
+进行镜像制作，将步骤1的jdk压入镜像。
 
 本工程使用的是oracle-jdk8u181版本，可以根据自己需要更换版本，本工程包含JDK（太大无法上传到github）。
 
@@ -41,7 +41,7 @@ ENV JAVA_HOME /app/3rd/jdk/default
 ENV PATH $PATH:/$JAVA_HOME/bin
 ENV LANG en_US.UTF-8
 
-# (2).oraclejdk-image验证命令
+# (3).oraclejdk-image验证命令
 
 docker run --rm oraclejdk-linux-64:8u181 java -version
 
