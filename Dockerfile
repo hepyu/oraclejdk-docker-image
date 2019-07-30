@@ -26,7 +26,7 @@ RUN useradd inc \
 #
 #需要注意：
 #   jdk.tar.gz解压后的目录要和后边的ENV JAVA_HOME的配置相匹配，否则运行容器后找不到java命令。
-ADD jdk1.8.0_221.tar.gz /app/3rd/
+ADD jdk.tar.gz /app/3rd/
 
 #默认将mysql和redis-cli压入镜像，很多情况下都要用到。
 COPY mysql /app/3rd/mysql/default/bin/
@@ -34,6 +34,6 @@ COPY redis-cli /app/3rd/redis/default/bin/
 
 #配置环境变量
 #注意版本
-ENV JAVA_HOME /app/3rd/jdk1.8.0_221
+ENV JAVA_HOME /app/3rd/jdk/default
 ENV PATH $PATH:/$JAVA_HOME/bin
 ENV LANG en_US.UTF-8
