@@ -1,5 +1,6 @@
 #基础镜像
-FROM centos
+#centos版本不要超过宿主机的centos版本
+FROM centos:7.3.1611
 MAINTAINER      hpy253215039@163.com
 
 #前期准备，比如创建运行用户，相关目录，相关的基础命令如telnet, mysql, redis-cli等。
@@ -25,13 +26,14 @@ RUN useradd inc \
 #
 #需要注意：
 #   jdk.tar.gz解压后的目录要和后边的ENV JAVA_HOME的配置相匹配，否则运行容器后找不到java命令。
-ADD jdk.tar.gz /app/3rd/
+ADD jdk1.8.0_221.tar.gz /app/3rd/
 
 #默认将mysql和redis-cli压入镜像，很多情况下都要用到。
 COPY mysql /app/3rd/mysql/default/bin/
 COPY redis-cli /app/3rd/redis/default/bin/
 
 #配置环境变量
-ENV JAVA_HOME /app/3rd/jdk/default
+#注意版本
+ENV JAVA_HOME /app/3rd/jdk1.8.0_221
 ENV PATH $PATH:/$JAVA_HOME/bin
 ENV LANG en_US.UTF-8
