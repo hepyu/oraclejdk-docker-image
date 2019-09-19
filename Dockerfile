@@ -6,7 +6,7 @@ MAINTAINER      hpy253215039@163.com
 #前期准备，比如创建运行用户，相关目录，相关的基础命令如telnet, mysql, redis-cli等。
 RUN useradd inc \
 ;mkdir -p /app/3rd\
-;mkdir -p /app/3rd/skywalking-agent\
+;mkdir -p /app/3rd/skywalking-agent/config\
 ;mkdir  -p /app/inc/apps  \
 ;mkdir -p /data/inc/logs/tomcat \
 ;chown -R inc:inc /app/inc/ /data/inc \
