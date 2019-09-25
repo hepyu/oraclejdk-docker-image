@@ -2,10 +2,6 @@
 
 # 头条技术号：实战架构
 
-# 实战交流群
-
-![image](https://github.com/hepyu/saf/blob/master/images/k8s.png)
-
 笔者生产实践中使用/制作的jdk官方镜像。
 
 # (1).oraclejdk镜像制作步骤
@@ -56,3 +52,7 @@ docker run --rm oraclejdk-linux-64:8u181 java -version
 
 如果镜像制作成功，打印如下信息：
 ![image](https://github.com/hepyu/oraclejdk-docker-image/blob/master/images/oraclejdk-1.png)
+
+# 实战交流群
+
+![image](https://github.com/hepyu/saf/blob/master/images/k8s.png)
