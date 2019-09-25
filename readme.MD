@@ -1,6 +1,10 @@
-微信公众号：千里行走
+# 微信公众号：千里行走
 
-头条技术号：实战架构
+# 头条技术号：实战架构
+
+# 实战交流群
+
+![image](https://github.com/hepyu/saf/blob/master/images/k8s.png)
 
 笔者生产实践中使用/制作的jdk官方镜像。
 
